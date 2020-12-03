@@ -1,22 +1,91 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Llampats Festival - Inici</title>
+    <script async src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
   </head>
   <body>
-    <img src="assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
+    <header>
+      <div class="flex-color-box  flex-color-box--border-bottom">
+        <div>
+          <a class="logo" href="index.html">LLAMPATS</a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#" class="nav-link  active">Inici</a>
+            </li>
+            <li>
+              <a href="artistes.html" class="nav-link">Artistes</a>
+            </li>
+            <li>
+              <a href="festival.html" class="nav-link">Festival</a>
+            </li>
+            <li>
+              <a href="contacte.html" class="nav-link">Contacte</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <section>
+      <div class="hero">
+        <div class="grid-img ">
+          <div class="grid-img--claim  img--box__primary">
+           <h1 class="logo">LLAMPATS</h1>
+           <hr>
+           <h2>Festival Km.0</h2>
+          </div>
+          <div class="grid-img--dates img--box__secondary x-large">
+            <p>20/12/20</p>
+            <p>AMPOSTA</p>
+            <p>(TGN)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="flex-color-box  flex-color-box--border-top">
+        <div>
+          <a class="logo" href="index.html">LLAMPATS</a>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="index.html" class="nav-link  active">Inici</a>
+            </li>
+            <li>
+              <a href="artistes.html" class="nav-link">Artistes</a>
+            </li>
+            <li>
+              <a href="festival.html" class="nav-link">Festival</a>
+            </li>
+            <li>
+              <a href="contacte.html" class="nav-link">Contacte</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav  x-large">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
   </body>
 </html>
