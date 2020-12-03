@@ -10,3 +10,7 @@ $fons-clar: color.adjust($fons-fosc, $lightness: 25%);
 // $fons-clar: rgba(69, 141, 209, 0.2);
 $text: #1f1f11;
 $text-clar: #666;
+
+$theme-colors: (
+  "primary": #fabada // pon el código de color que prefieras,
+);
