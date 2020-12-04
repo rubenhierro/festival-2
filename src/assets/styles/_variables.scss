@@ -3,14 +3,21 @@
 $font-family-sans-serif: "Roboto", "sans-serif";
 $font-family-serif: "Georgia", "Times New Roman", serif;
 $font-family-logo: "Monoton", cursive;
+$font-family-header: "Major Mono Display", monospace;
 
-$principal: #f53b46;
-$fons-fosc: rgba(69, 141, 209, 0.5);
-$fons-clar: color.adjust($fons-fosc, $lightness: 25%);
-// $fons-clar: rgba(69, 141, 209, 0.2);
+$principal: darkgoldenrod;
+$secondary: #d90602;
+$background-dark: rgba(13, 17, 20, 0.5);
+$background-light: color.adjust($background-dark, $lightness: 75%);
+
 $text: #1f1f11;
 $text-clar: #666;
 
-$theme-colors: (
-  "primary": #fabada // pon el código de color que prefieras,
-);
+/* Bootstrap */
+
+$info: $principal;
+
+$link-color: $secondary;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: line-through !default;

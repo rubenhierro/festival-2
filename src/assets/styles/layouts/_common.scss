@@ -20,36 +20,30 @@ body {
 h1,
 h2,
 h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: $font-family-header;
 }
 
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.button {
-  background-color: $fons-fosc;
-  border-color: $principal;
-  padding: 10px 50px;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  transition: background-color 0.5s ease-out;
-}
-
-.button:hover,
-.button:focus {
-  background-color: $fons-clar;
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Nav */
 
 a {
-  color: $principal;
+  color: $secondary;
   text-decoration: none;
 }
 
@@ -91,7 +85,7 @@ a.active:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: $principal;
+  color: $secondary;
   padding: 10px;
 }
 
@@ -106,4 +100,24 @@ a.active:hover {
 .logo {
   font-family: $font-family-logo;
   font-size: x-large;
+}
+
+/* Display */
+
+.larger {
+  font-size: larger;
+}
+
+.x-large {
+  font-size: x-large;
+}
+
+.img-box__primary {
+  background-color: $principal;
+  color: white;
+}
+
+.img-box__secondary {
+  background-color: white;
+  color: $principal;
 }
