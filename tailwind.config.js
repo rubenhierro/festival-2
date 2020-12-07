@@ -1,8 +1,13 @@
 module.exports = {
-  purge: [],
+  purge: ["./src/**/*.html"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      'serif': ['Roboto', 'serif'],
+      'sans-serif': [ 'Georgia', 'Times New Roman', 'sans-serif'],
+      'logo': ["Monoton", 'cursive'],
+      'header': ['Major Mono Display', 'monospace'],
+    },
   },
   variants: {
     extend: {},

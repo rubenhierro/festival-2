@@ -1,53 +1,7 @@
-/* Display */
-
-.artist-list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .artist-card {
-  background-color: $background-light;
-  border: 1px solid $background-dark;
-  width: 350px;
-  min-height: 350px;
-  height: auto;
-  padding-bottom: 10px;
-  margin: 20px;
+  @apply bg-gray-100 border-2 w-96 pb-2 m-2;
 }
 
-.artist-card__image {
-  width: 348px;
-  height: auto;
-}
-
-.artist-card__title {
-  margin: 0;
-}
-
-.artist-card__music-style {
-  padding: 10px;
-  text-transform: uppercase;
-}
-
-.artist-card__description {
-  font-size: smaller;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-}
-
-.artist-card__button {
-  margin: 10px;
-}
-
-/* Responsive */
-
-@media screen and (min-width: 800px) {
-  .flex {
-    flex-direction: row;
-  }
+.button {
+  @apply bg-info rounded text-white p-2 m-2;
 }

@@ -1,12 +1,8 @@
+// Display
+
 * {
   margin: 0;
   padding: 0;
-}
-
-/* Selectors */
-
-html {
-  box-sizing: border-box;
 }
 
 body {
@@ -17,13 +13,7 @@ body {
   line-height: 1.6em;
 }
 
-h1,
-h2,
-h3 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-family: $font-family-header;
-}
+// Layout
 
 main {
   max-width: 1200px;
@@ -32,15 +22,7 @@ main {
   margin-bottom: 20px;
 }
 
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* Nav */
+// Links
 
 a {
   color: $secondary;
@@ -61,63 +43,22 @@ a.active:hover {
   text-decoration: underline;
 }
 
-.nav {
-  font-size: normal;
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-
-    li {
-      padding: 10px;
-      margin: 10px;
-    }
-  }
-}
-
-/* Content */
-
-.flex-color-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $secondary;
-  padding: 10px;
-}
-
-.flex-color-box--border-bottom {
-  border-bottom: 3px solid;
-}
-
-.flex-color-box--border-top {
-  border-top: 3px solid;
-}
-
-.logo {
-  font-family: $font-family-logo;
-  font-size: x-large;
-}
-
-/* Display */
-
-.larger {
-  font-size: larger;
-}
-
-.x-large {
-  font-size: x-large;
-}
+// Tailwind
 
 .img-box__primary {
-  background-color: $principal;
-  color: white;
+  @apply p-2 font-header bg-info text-white m-0;
 }
 
 .img-box__secondary {
-  background-color: white;
-  color: $principal;
+  @apply p-1 uppercase bg-white text-info border-b-2 border-info;
+}
+
+.flex-header-footer {
+  @apply flex flex-wrap flex-column justify-center align-items-center;
+}
+
+@media screen and (min-width: 800px) {
+  .flex-header-footer {
+    @apply flex flex-wrap flex-row justify-between align-items-center;
+  }
 }
